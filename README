@@ -8,6 +8,15 @@ PCA finds new vectors that give the directions in a vector space (in this case t
 
 ## Installing
 
+First, [install Anaconda](https://docs.continuum.io/anaconda/install), a nicely packaged version of the Python scientific stack.
+Then, to install all the required libraries and start the tutorial, run the following from a command line: (tested on Mac OS X only)
+````
+git clone https://github.com/histed/PCATutorialPython.git
+cd PCATutorialPython
+conda env create
+source activate PCATutorialPython
+````
+
 ## Contacts
 
 * Bradley Akitake bakitake.nih@gmail.com
@@ -20,9 +29,11 @@ send questions to code@histedlab.org
 
 
 
-### License
+### License 
 
 This work is in the public domain.
+
+
 
 
 

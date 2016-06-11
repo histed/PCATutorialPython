@@ -1,0 +1,18 @@
+name: PCATutorialPython
+
+dependencies:
+- jupyter
+- jupyter_client
+- jupyter_console
+- jupyter_core
+- matplotlib
+- notebook
+- numpy
+- pandas
+- python=3.5
+- mkl
+- qtconsole
+- scipy
+- seaborn
+- six
+
