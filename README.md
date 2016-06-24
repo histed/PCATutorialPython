@@ -28,7 +28,7 @@ bash ~/Downloads/Anaconda3-4.0.0-MacOSX-x86_64.sh
 
 Next, to install all the required libraries and start the tutorial, run the following from a command line after changing to your desired working directory:
 ````
-source activate ~/anaconda3/bin/activate root
+source ~/anaconda3/bin/activate root
 git clone https://github.com/histed/PCATutorialPython.git
 cd PCATutorialPython
 conda env create
