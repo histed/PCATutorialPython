@@ -1,6 +1,6 @@
 # Principal Components Analysis Tutorial, using Python
 
-This tutorial can help you teach yourself how to do principal components analysis using Python.     *Quickstart*: Click here to try it online!  (Note: may take 30 sec to load, and this online version will not save changes; you must install - see below)  [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/histed/PCATutorialPython)
+This tutorial can help you teach yourself how to do principal components analysis using Python.     *Quickstart*: Click button to try online version!   [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/histed/PCATutorialPython)  (Note: may take 30 sec to load.  Online version will not save changes; you must install locally.) 
 
 As example data, we use extracellular neuron spike waveforms, recorded from a silicon recording electrode in mouse visual cortex.  Data is sampled at around 30 kHz.  Each waveform is a vector of length nTimepts (nTimepts is about 50, total waveform duration is about 1.5 ms).
 
@@ -14,30 +14,31 @@ You can use the excellent [Binder](http://mybinder.org) tool to run this tutoria
 (Thanks to Jeremy Freeman for the Binder tool.)
 
 
-## Installing
+## Installing locally
 
-Instructions for Mac OS X.
+Instructions are for Mac OS X.
 
-First, [install Anaconda](https://docs.continuum.io/anaconda), a nicely packaged version of the Python scientific stack.
-- First, download the Python 3.5 command line installer.  Then run:
-````
-bash ~/Downloads/Anaconda3-4.0.0-MacOSX-x86_64.sh
-````
-- Approve the license
-- Install to anaconda3 in your home directory: /Users/yourusername/anaconda3
+[Anaconda](https://docs.continuum.io/anaconda) is a nicely packaged version of the Python scientific stack.
+Follow [these directions to install Anaconda](https://docs.continuum.io/anaconda/install#anaconda-for-os-x-graphical-install).  Use the Python 3 Mac OS X 64-bit graphical installer.  You must select 'Install for me only'.
 
-Next, to install all the required libraries and start the tutorial, run the following from a command line after changing to your desired working directory:
+You may need to install Apple's Developer tools to use git.  To check, open a terminal window and type 'git'.  If a dialog prompts you to install the Developer Tools, do that next.
+
+The tutorial uses Anaconda to install extra required python components.  To install them and start the tutorial, run the following from a Terminal prompt:
 ````
-source ~/anaconda3/bin/activate root
+mkdir ~/Repositories  # change this if you want to put the code in a different location
+cd ~/Repositories   # change this if you want to put the code in a different location
+source ~/anaconda/bin/activate root
 git clone https://github.com/histed/PCATutorialPython.git
 cd PCATutorialPython
 conda env create
 source activate PCATutorialPython
 ````
-To open the notebook:
+Then, open the notebook, by typing in the same terminal window:
 ````
 jupyter notebook PCATutorialPython.ipynb
 ````
+
+The Jupyter notebook will pop up in a browser window.  If you don't see anything, check any open browsers.
 
 ## Contacts
 
